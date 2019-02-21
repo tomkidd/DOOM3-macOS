@@ -677,8 +677,6 @@
 		A1BB283A221E10B400361A55 /* CreateResourceIDs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1BB250A221E10B300361A55 /* CreateResourceIDs.cpp */; };
 		A1BB283B221E10B400361A55 /* Radiant.rc in Resources */ = {isa = PBXBuildFile; fileRef = A1BB250B221E10B300361A55 /* Radiant.rc */; };
 		A1BB283C221E10B400361A55 /* threads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1BB250E221E10B300361A55 /* threads.cpp */; };
-		A1BB283D221E10B400361A55 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = A1BB250F221E10B300361A55 /* CMakeLists.txt */; };
-		A1BB283E221E10B400361A55 /* config.h.in in Resources */ = {isa = PBXBuildFile; fileRef = A1BB2510221E10B300361A55 /* config.h.in */; };
 		A1BB283F221E10B400361A55 /* Anim_Testmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1BB2514221E10B300361A55 /* Anim_Testmodel.cpp */; };
 		A1BB2840221E10B400361A55 /* Anim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1BB2515221E10B300361A55 /* Anim.cpp */; };
 		A1BB2841221E10B400361A55 /* Anim_Blend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1BB2517221E10B300361A55 /* Anim_Blend.cpp */; };
@@ -1993,10 +1991,34 @@
 		A1BB259F221E10B400361A55 /* MultiplayerGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiplayerGame.cpp; sourceTree = "<group>"; };
 		A1BB25A0221E10B400361A55 /* PlayerIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerIcon.h; sourceTree = "<group>"; };
 		A1BB25A1221E10B400361A55 /* SecurityCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecurityCamera.h; sourceTree = "<group>"; };
+		A1BB28A7221E566100361A55 /* base.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = base.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1BB28AF221E567400361A55 /* d3xp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = d3xp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1BB28B7221E568B00361A55 /* libidlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libidlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A1BB2057221E0F9100361A55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BB28A5221E566100361A55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BB28AD221E567400361A55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BB28B5221E568B00361A55 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2019,6 +2041,9 @@
 			isa = PBXGroup;
 			children = (
 				A1BB205A221E0F9100361A55 /* doom3.app */,
+				A1BB28A7221E566100361A55 /* base.dylib */,
+				A1BB28AF221E567400361A55 /* d3xp.dylib */,
+				A1BB28B7221E568B00361A55 /* libidlib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4104,6 +4129,30 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A1BB28A3221E566100361A55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BB28AB221E567400361A55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BB28B3221E568B00361A55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		A1BB2059221E0F9100361A55 /* doom3 */ = {
 			isa = PBXNativeTarget;
@@ -4122,6 +4171,57 @@
 			productReference = A1BB205A221E0F9100361A55 /* doom3.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A1BB28A6221E566100361A55 /* base */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1BB28A8221E566200361A55 /* Build configuration list for PBXNativeTarget "base" */;
+			buildPhases = (
+				A1BB28A3221E566100361A55 /* Headers */,
+				A1BB28A4221E566100361A55 /* Sources */,
+				A1BB28A5221E566100361A55 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = base;
+			productName = base;
+			productReference = A1BB28A7221E566100361A55 /* base.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		A1BB28AE221E567400361A55 /* d3xp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1BB28B0221E567400361A55 /* Build configuration list for PBXNativeTarget "d3xp" */;
+			buildPhases = (
+				A1BB28AB221E567400361A55 /* Headers */,
+				A1BB28AC221E567400361A55 /* Sources */,
+				A1BB28AD221E567400361A55 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = d3xp;
+			productName = d3xp;
+			productReference = A1BB28AF221E567400361A55 /* d3xp.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		A1BB28B6221E568B00361A55 /* idlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1BB28B8221E568B00361A55 /* Build configuration list for PBXNativeTarget "idlib" */;
+			buildPhases = (
+				A1BB28B3221E568B00361A55 /* Headers */,
+				A1BB28B4221E568B00361A55 /* Sources */,
+				A1BB28B5221E568B00361A55 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = idlib;
+			productName = idlib;
+			productReference = A1BB28B7221E568B00361A55 /* libidlib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -4133,6 +4233,15 @@
 				ORGANIZATIONNAME = "Tom Kidd";
 				TargetAttributes = {
 					A1BB2059221E0F9100361A55 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A1BB28A6221E566100361A55 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A1BB28AE221E567400361A55 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A1BB28B6221E568B00361A55 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -4151,6 +4260,9 @@
 			projectRoot = "";
 			targets = (
 				A1BB2059221E0F9100361A55 /* doom3 */,
+				A1BB28A6221E566100361A55 /* base */,
+				A1BB28AE221E567400361A55 /* d3xp */,
+				A1BB28B6221E568B00361A55 /* idlib */,
 			);
 		};
 /* End PBXProject section */
@@ -4192,7 +4304,6 @@
 				A1BB27F0221E10B400361A55 /* icon2.ico in Resources */,
 				A1BB27BB221E10B400361A55 /* setup.mo in Resources */,
 				A1BB27B0221E10B400361A55 /* README in Resources */,
-				A1BB283D221E10B400361A55 /* CMakeLists.txt in Resources */,
 				A1BB27AC221E10B400361A55 /* doom3 in Resources */,
 				A1BB2795221E10B400361A55 /* mmakefile.src in Resources */,
 				A1BB27B3221E10B400361A55 /* openurl.sh in Resources */,
@@ -4309,7 +4420,6 @@
 				A1BB27F3221E10B400361A55 /* Radiant.ico in Resources */,
 				A1BB2753221E10B400361A55 /* nextanim.png in Resources */,
 				A1BB274E221E10B400361A55 /* specular.png in Resources */,
-				A1BB283E221E10B400361A55 /* config.h.in in Resources */,
 				A1BB27CC221E10B400361A55 /* config.sh in Resources */,
 				A1BB27CA221E10B400361A55 /* xsu in Resources */,
 				A1BB2757221E10B400361A55 /* resetcam.png in Resources */,
@@ -4918,6 +5028,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1BB28A4221E566100361A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BB28AC221E567400361A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1BB28B4221E568B00361A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -5083,6 +5214,74 @@
 			};
 			name = Release;
 		};
+		A1BB28A9221E566200361A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1BB28AA221E566200361A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A1BB28B1221E567400361A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1BB28B2221E567400361A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A1BB28B9221E568B00361A55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1BB28BA221E568B00361A55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -5100,6 +5299,33 @@
 			buildConfigurations = (
 				A1BB2069221E0F9200361A55 /* Debug */,
 				A1BB206A221E0F9200361A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1BB28A8221E566200361A55 /* Build configuration list for PBXNativeTarget "base" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1BB28A9221E566200361A55 /* Debug */,
+				A1BB28AA221E566200361A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1BB28B0221E567400361A55 /* Build configuration list for PBXNativeTarget "d3xp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1BB28B1221E567400361A55 /* Debug */,
+				A1BB28B2221E567400361A55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1BB28B8221E568B00361A55 /* Build configuration list for PBXNativeTarget "idlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1BB28B9221E568B00361A55 /* Debug */,
+				A1BB28BA221E568B00361A55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
