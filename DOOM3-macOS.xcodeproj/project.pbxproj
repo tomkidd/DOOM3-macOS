@@ -20,6 +20,8 @@
 		A1052C81221FADAE007623D0 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1052C7E221FADAE007623D0 /* Carbon.framework */; };
 		A1052C82221FADCC007623D0 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BB2980221E6D6F00361A55 /* SDL2.framework */; };
 		A1052C83221FAEF2007623D0 /* libidlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BB28B7221E568B00361A55 /* libidlib.a */; };
+		A1052C84221FB7DD007623D0 /* base.dylib in Resources */ = {isa = PBXBuildFile; fileRef = A1BB28A7221E566100361A55 /* base.dylib */; };
+		A1052C85221FBA16007623D0 /* base.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BB28A7221E566100361A55 /* base.dylib */; };
 		A1BB2060221E0F9200361A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1BB205F221E0F9200361A55 /* Assets.xcassets */; };
 		A1BB2063221E0F9200361A55 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BB2061221E0F9200361A55 /* MainMenu.xib */; };
 		A1BB25A2221E10B400361A55 /* DemoFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1BB206E221E10B200361A55 /* DemoFile.cpp */; };
@@ -912,6 +914,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1052C85221FBA16007623D0 /* base.dylib in Frameworks */,
 				A1052C82221FADCC007623D0 /* SDL2.framework in Frameworks */,
 				A1052C7F221FADAE007623D0 /* Cocoa.framework in Frameworks */,
 				A1052C80221FADAE007623D0 /* IOKit.framework in Frameworks */,
@@ -1988,6 +1991,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1052C84221FB7DD007623D0 /* base.dylib in Resources */,
 				A1BB2060221E0F9200361A55 /* Assets.xcassets in Resources */,
 				A1BB2063221E0F9200361A55 /* MainMenu.xib in Resources */,
 				A1BB278B221E10B400361A55 /* Doom3.icns in Resources */,
