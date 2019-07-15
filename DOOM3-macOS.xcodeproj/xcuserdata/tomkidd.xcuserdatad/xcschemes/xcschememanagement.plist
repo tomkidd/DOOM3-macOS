@@ -19,11 +19,6 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>doom3.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
 		<key>idlib.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>

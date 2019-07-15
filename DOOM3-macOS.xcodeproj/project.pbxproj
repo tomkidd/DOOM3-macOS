@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A1052C6D221FACE9007623D0 /* libidlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BB28B7221E568B00361A55 /* libidlib.a */; };
-		A1052C6F221FAD01007623D0 /* libopenal.1.18.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1052C6E221FAD01007623D0 /* libopenal.1.18.2.dylib */; };
 		A1052C74221FAD45007623D0 /* libjpeg.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1052C70221FAD45007623D0 /* libjpeg.9.dylib */; };
 		A1052C75221FAD45007623D0 /* libvorbis.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1052C71221FAD45007623D0 /* libvorbis.0.dylib */; };
 		A1052C76221FAD45007623D0 /* libvorbisfile.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1052C72221FAD45007623D0 /* libvorbisfile.3.dylib */; };
@@ -22,6 +21,7 @@
 		A1052C83221FAEF2007623D0 /* libidlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BB28B7221E568B00361A55 /* libidlib.a */; };
 		A1052C84221FB7DD007623D0 /* base.dylib in Resources */ = {isa = PBXBuildFile; fileRef = A1BB28A7221E566100361A55 /* base.dylib */; };
 		A1052C85221FBA16007623D0 /* base.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BB28A7221E566100361A55 /* base.dylib */; };
+		A16CA00D22DD346C00D91600 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BB2982221E6D9500361A55 /* OpenAL.framework */; };
 		A1BB2060221E0F9200361A55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1BB205F221E0F9200361A55 /* Assets.xcassets */; };
 		A1BB2063221E0F9200361A55 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BB2061221E0F9200361A55 /* MainMenu.xib */; };
 		A1BB25A2221E10B400361A55 /* DemoFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1BB206E221E10B200361A55 /* DemoFile.cpp */; };
@@ -914,6 +914,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16CA00D22DD346C00D91600 /* OpenAL.framework in Frameworks */,
 				A1052C85221FBA16007623D0 /* base.dylib in Frameworks */,
 				A1052C82221FADCC007623D0 /* SDL2.framework in Frameworks */,
 				A1052C7F221FADAE007623D0 /* Cocoa.framework in Frameworks */,
@@ -925,7 +926,6 @@
 				A1052C75221FAD45007623D0 /* libvorbis.0.dylib in Frameworks */,
 				A1052C76221FAD45007623D0 /* libvorbisfile.3.dylib in Frameworks */,
 				A1052C77221FAD45007623D0 /* libogg.0.dylib in Frameworks */,
-				A1052C6F221FAD01007623D0 /* libopenal.1.18.2.dylib in Frameworks */,
 				A1052C6D221FACE9007623D0 /* libidlib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
